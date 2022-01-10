@@ -5,9 +5,6 @@ import (
 	"fmt"
 )
 
-type AddRequest struct{}
-type AddResponse struct{}
-
 func (d *Db) Create(ctx context.Context, i Item) error {
 	db, err := connect()
 	if err != nil {
